@@ -1,4 +1,4 @@
 ohaskell-code
 =============
 
-Source code from book "О Haskell по-человечески"
+Примеры исходного кода к книге "О Haskell по-человечески".
