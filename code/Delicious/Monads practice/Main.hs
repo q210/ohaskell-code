@@ -9,7 +9,7 @@
 import Data.Char
 
 toLowerCase = return . toLower
-underlineSpaces char = return (if char == ' ' then '_' else char)
+underlineSpaces char = return $ if char == ' ' then '_' else char
 
 main :: IO () 
 main = 
@@ -19,7 +19,11 @@ main =
 -------------------------------------------------------------------
 -------------------------------------------------------------------
 {-
+{-# LANGUAGE NoMonomorphismRestriction #-}
+
 import Data.Char
+
+toLowerCase = return . toLower
 
 main :: IO ()
 main = 
